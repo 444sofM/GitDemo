@@ -8,8 +8,6 @@ package model;
  *
  * @author invitado
  */
-public class Profesor {
-    private int id;
-    private String name;
+public class Classroom {
     
 }
