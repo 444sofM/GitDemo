@@ -4,6 +4,8 @@
  */
 package model;
 
+import java.util.logging.Logger;
+
 /**
  *
  * @author invitado
@@ -11,14 +13,20 @@ package model;
 public class Person {
     private int id;
     private String name;
+<<<<<<< HEAD
     private String lastname;
     
      public Person (int id,String name,String lastname){
-         this.id=id;
+
+    private String address;
+    
+     public Person (int id,String name){
+        this.id=id;
          this.name=name;
          
          
      }
+
 
     public String getLastname() {
         return lastname;
@@ -31,6 +39,10 @@ public class Person {
     public Person(String lastname) {
         this.lastname = lastname;
     }
+    public Person(String address) {
+        this.address = address;
+    }
+    private static final Logger LOG = Logger.getLogger(Person.class.getName());
 
     public int getId() {
         return id;
